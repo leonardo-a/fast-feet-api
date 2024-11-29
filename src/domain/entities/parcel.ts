@@ -1,10 +1,11 @@
 import { Entity } from '@/core/entities/entity'
 import type { UniqueEntityID } from '@/core/entities/unique-entity-id'
+import { ParcelStatus } from '../types/parcel-status'
 
 export interface ParcelProps {
   recipientId: UniqueEntityID
   deliveryPersonId: UniqueEntityID
-  status: 'pending' | 'awaiting_pickup' | 'picked_up' | 'delivered' | 'returned'
+  status: ParcelStatus
   createdAt: Date
   updatedAt?: Date | null
 }
