@@ -26,7 +26,7 @@ export class Admin extends Entity<AdminProps> {
     return this.props.role
   }
 
-  static create(props: AdminProps, id?: UniqueEntityID) {
+  static create(props: Omit<AdminProps, 'role'>, id?: UniqueEntityID) {
     const admin = new Admin(
       {
         ...props,

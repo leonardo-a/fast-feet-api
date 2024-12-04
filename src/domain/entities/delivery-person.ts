@@ -26,7 +26,7 @@ export class DeliveryPerson extends Entity<DeliveryPersonProps> {
     return this.props.role
   }
 
-  static create(props: DeliveryPersonProps, id?: UniqueEntityID) {
+  static create(props: Omit<DeliveryPersonProps, 'role'>, id?: UniqueEntityID) {
     const deliveryperson = new DeliveryPerson(
       {
         ...props,
