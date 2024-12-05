@@ -26,6 +26,14 @@ export class DeliveryPerson extends Entity<DeliveryPersonProps> {
     return this.props.role
   }
 
+  set name(value: string) {
+    this.props.name = value
+  }
+
+  set password(value: string) {
+    this.props.password = value
+  }
+
   static create(props: Omit<DeliveryPersonProps, 'role'>, id?: UniqueEntityID) {
     const deliveryperson = new DeliveryPerson(
       {

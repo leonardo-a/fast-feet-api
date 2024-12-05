@@ -35,4 +35,14 @@ export class InMemoryDeliveryPersonsRepository
 
     return deliveryperson
   }
+
+  async findById(id: string): Promise<DeliveryPerson | null> {
+    const deliveryperson = this.items.find((item) => item.id.toString() === id)
+
+    if (!deliveryperson) {
+      return null
+    }
+
+    return deliveryperson
+  }
 }
