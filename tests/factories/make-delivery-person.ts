@@ -4,7 +4,7 @@ import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import {
   DeliveryPerson,
   DeliveryPersonProps,
-} from '@/domain/entities/delivery-person'
+} from '@/domain/carrier/enterprise/entities/delivery-person'
 
 export function makeDeliveryPerson(
   override: Partial<DeliveryPersonProps> = {},

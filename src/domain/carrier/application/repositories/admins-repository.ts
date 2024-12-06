@@ -1,4 +1,4 @@
-import { Admin } from '../entities/admin'
+import { Admin } from '../../enterprise/entities/admin'
 
 export abstract class AdminsRepository {
   abstract findByCPF(cpf: string): Promise<Admin | null>

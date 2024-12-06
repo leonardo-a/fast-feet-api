@@ -1,5 +1,5 @@
-import { Admin } from '@/domain/entities/admin'
-import { AdminsRepository } from '@/domain/repositories/admins-repository'
+import { Admin } from '@/domain/carrier/enterprise/entities/admin'
+import { AdminsRepository } from '@/domain/carrier/application/repositories/admins-repository'
 
 export class InMemoryAdminsRepository implements AdminsRepository {
   public items: Admin[] = []

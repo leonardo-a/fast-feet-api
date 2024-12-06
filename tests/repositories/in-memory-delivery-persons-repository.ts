@@ -1,6 +1,6 @@
 import { PaginationParams } from '@/core/repositories/pagination-params'
-import { DeliveryPerson } from '@/domain/entities/delivery-person'
-import { DeliveryPersonsRepository } from '@/domain/repositories/delivery-persons-repository'
+import { DeliveryPerson } from '@/domain/carrier/enterprise/entities/delivery-person'
+import { DeliveryPersonsRepository } from '@/domain/carrier/application/repositories/delivery-persons-repository'
 
 export class InMemoryDeliveryPersonsRepository
   implements DeliveryPersonsRepository

@@ -1,6 +1,6 @@
 import { Either, left, right } from '@/core/either'
 import { HashGenerator } from '../cryptography/hash-generator'
-import { DeliveryPerson } from '../entities/delivery-person'
+import { DeliveryPerson } from '../../enterprise/entities/delivery-person'
 import { AdminsRepository } from '../repositories/admins-repository'
 import { DeliveryPersonsRepository } from '../repositories/delivery-persons-repository'
 import { DeliveryPersonAlreadyExistsError } from './errors/delivery-person-already-exists-error'

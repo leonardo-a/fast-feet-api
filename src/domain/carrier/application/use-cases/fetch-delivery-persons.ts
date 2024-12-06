@@ -1,5 +1,5 @@
 import { Either, left, right } from '@/core/either'
-import { DeliveryPerson } from '../entities/delivery-person'
+import { DeliveryPerson } from '../../enterprise/entities/delivery-person'
 import { AdminsRepository } from '../repositories/admins-repository'
 import { DeliveryPersonsRepository } from '../repositories/delivery-persons-repository'
 import { UnauthorizedError } from './errors/unauthorized-error'
