@@ -1,3 +1,4 @@
+import { PaginationParams } from '@/core/repositories/pagination-params'
 import { DeliveryPerson } from '@/domain/entities/delivery-person'
 import { DeliveryPersonsRepository } from '@/domain/repositories/delivery-persons-repository'
 
@@ -27,22 +28,30 @@ export class InMemoryDeliveryPersonsRepository
   }
 
   async findByCPF(cpf: string): Promise<DeliveryPerson | null> {
-    const deliveryperson = this.items.find((item) => item.cpf === cpf)
+    const deliveryPerson = this.items.find((item) => item.cpf === cpf)
 
-    if (!deliveryperson) {
+    if (!deliveryPerson) {
       return null
     }
 
-    return deliveryperson
+    return deliveryPerson
   }
 
   async findById(id: string): Promise<DeliveryPerson | null> {
-    const deliveryperson = this.items.find((item) => item.id.toString() === id)
+    const deliveryPerson = this.items.find((item) => item.id.toString() === id)
 
-    if (!deliveryperson) {
+    if (!deliveryPerson) {
       return null
     }
 
-    return deliveryperson
+    return deliveryPerson
+  }
+
+  async findMany({ page }: PaginationParams): Promise<DeliveryPerson[]> {
+    const limit = 20
+
+    const deliveryPersons = this.items.slice((page - 1) * limit, page * limit)
+
+    return deliveryPersons
   }
 }
