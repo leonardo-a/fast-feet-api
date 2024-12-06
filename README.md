@@ -4,9 +4,9 @@ API para controle de encomendas de uma transportadora, a FastFeet.
 
 ### Regras da aplicação
 
-- [ ] A aplicação deve ter dois tipos de usuário, entregador e/ou admin
-- [ ] Deve ser possível realizar login com CPF e Senha
-- [ ] Deve ser possível realizar o CRUD dos entregadores
+- [x] A aplicação deve ter dois tipos de usuário, entregador e/ou admin
+- [x] Deve ser possível realizar login com CPF e Senha
+- [x] Deve ser possível realizar o CRUD dos entregadores
 - [ ] Deve ser possível realizar o CRUD das encomendas
 - [ ] Deve ser possível realizar o CRUD dos destinatários
 - [ ] Deve ser possível marcar uma encomenda como aguardando (Disponível para retirada)
@@ -21,9 +21,9 @@ API para controle de encomendas de uma transportadora, a FastFeet.
 ### Regras de negócio
 
 - [ ] Somente usuário do tipo admin pode realizar operações de CRUD nas encomendas
-- [ ] Somente usuário do tipo admin pode realizar operações de CRUD dos entregadores
+- [x] Somente usuário do tipo admin pode realizar operações de CRUD dos entregadores
 - [ ] Somente usuário do tipo admin pode realizar operações de CRUD dos destinatários
 - [ ] Para marcar uma encomenda como entregue é obrigatório o envio de uma foto
 - [ ] Somente o entregador que retirou a encomenda pode marcar ela como entregue
-- [ ] Somente o admin pode alterar a senha de um usuário
+- [x] Somente o admin pode alterar a senha de um usuário
 - [ ] Não deve ser possível um entregador listar as encomendas de outro entregador
